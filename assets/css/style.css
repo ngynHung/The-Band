@@ -17,6 +17,21 @@ html {
     clear: both;
 }
 
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-3 {
+    width: calc(100% / 3);
+}
+/* MAIN  */
 #main {
     height: 2000px;
 } 
@@ -183,8 +198,6 @@ html {
 }
 
 #contain .member-item {
-    float: left;
-    width: calc(100% / 3);
     text-align: center;
 }
 
@@ -235,14 +248,13 @@ html {
 
 /* PLACE */
 .places-list {
-    margin: 32px -8px 0;
-    padding-bottom: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
 }
 
 .place-item {
     width: calc(100% / 3);
-    float: left;
-    padding: 0 8px;
 }
 
 .place-img {
@@ -280,6 +292,8 @@ html {
     padding: 10px 16px;
     display: inline-block;
     margin-top: 15px;
+    border: none;
+    border-radius: 5px;
 }
 
 .place-buy-btn:hover {

@@ -5,12 +5,25 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
 
+.pull-right {
+    float: right !important;
+}
+
 .text-white {
     color: #fff !important;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
 }
 
 .clear {
@@ -22,6 +35,12 @@ html {
     margin-right: -8px;
 }
 
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .col {
     float: left;
     padding-left: 8px;
@@ -31,6 +50,15 @@ html {
 .col-3 {
     width: calc(100% / 3);
 }
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
 /* MAIN  */
 #main {
     height: 2000px;
@@ -165,7 +193,7 @@ html {
 .content-section {
     width: 800px;
     margin: 0 auto;
-    padding: 64px 0;
+    padding: 64px 0 112px;
 }
 
 #contain .section-heading,
@@ -249,8 +277,6 @@ html {
 /* PLACE */
 .places-list {
     margin-top: 32px;
-    margin-bottom: 32px;
-
 }
 
 .place-item {
@@ -285,7 +311,7 @@ html {
     line-height: 1.4;
 }
 
-.place-buy-btn {
+.btn {
     color: #fff;
     text-decoration: none;
     background-color: #000;
@@ -294,12 +320,79 @@ html {
     margin-top: 15px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.place-buy-btn:hover {
+.btn:hover {
     background-color: #ccc;
     color: #000;
 }
+
+/* CONTACT */
+.contact-section {
+    margin-top: 50px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+
+/* MAP  */
+.map-section img {
+    width: 100%;
+}
+
+
+/* FOOTER  */
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+} 
+
+#footer .socials-list {
+    font-size: 24px;
+}
+
+#footer .socials-list a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .socials-list a:hover,
+#footer .copyright a:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#footer .copyright {
+    font-size: 15px;
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+
 /* MODAL  */
 .modal {
     position: fixed;
@@ -409,7 +502,3 @@ html {
         opacity: 1;
     }
 }
-/* FOOTER  */
-#footer {
-
-} 
